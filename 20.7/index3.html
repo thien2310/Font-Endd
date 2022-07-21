@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .demoA {
+            background-color: green;
+            margin-top: 5px;
+            width: 100px;
+            height: 100px;
+        }
+
+        .demoB {
+            background-color: orange;
+            margin-top: 5px;
+            margin-left: 10px;
+            width: 100px;
+            height: 100px;
+        }
+
+        .box {
+            width: 500px;
+            padding: 20px;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        ôn tập display 
+        display: block; 
+        display: inline;
+        display: inline-block;
+        display: flex;
+        display: none; 
+    </pre>
+
+    <pre>
+        display: block; 
+        display: inline;
+        https://www.w3schools.com/html/html_blocks.asp
+
+        * block 
+        - thẻ đặc trưng là thẻ div ( có rất thẻ thuộc nhóm này)
+        - thẻ block thì sẽ nằm trên các hàng khác nhau 
+        - thẻ block chiếm toàn bộ độ rộng của thẻ cha ( nếu thẻ block nằm trong thẻ body thì chiếm độ rộng toàn màn hinh )
+        - có thể set width và height cho block 
+        * inline 
+        - thẻ đặc trưng là thẻ a và span 
+        - thẻ inline nằm trên cùng 1 hàng nếu hàng đó còn không gian trống nếu hết không gian thì nó cũng xuống hàng 
+        - thẻ inline chỉ chiếm độ rộng tương đương nội dung bên trong của nó 
+        - thẻ inline không thể đặt width và height được 
+
+    </pre>
+
+    <div class="box">
+        <div class="demoA">
+            demo block box
+        </div>
+        <div class="demoA">
+            demo block box
+        </div>
+    </div>
+
+    <div class="demoA">
+        demo block 
+    </div>
+    <div class="demoA">
+        demo block 
+    </div>
+    <div class="demoA">
+        demo block 
+    </div>
+
+    <span class="demoB">
+        demo inline 
+    </span>
+
+    <span class="demoB">
+        demo inline 
+    </span>
+
+    <span class="demoB">
+        demo inline 
+    </span>
+
+
+</body>
+</html>
