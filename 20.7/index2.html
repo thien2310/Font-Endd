@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .divA {
+            background-color: red;
+            width: 150px;
+            height: 150px;
+            margin: 0 auto;
+        }
+
+        .divB {
+            background-color: orange;
+            width: 150px;
+            height: 150px;
+            margin: 0 auto;
+            border: 1px solid green;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <pre>
+        thuộc tính box-sizing 
+        chiều rộng thực tế = width + border left + border right + padding left + padding right 
+        chiều rộng = 150 + 6 + 6 + 20 + 20 = 202 
+        chiều cao thực tế : height + border top + border bottom + padding top + padding bottom 
+        chiều cao = 150 + 6 + 6 + 20 + 20 = 202 
+        => khi viết css cho 1 thẻ việc thêm padding và border vào thay đổi width thực tế và height thực tế 
+        => giải pháp dùng box-sizing
+    </pre>
+
+    <div class="divA">
+        div A
+    </div>
+
+    <div class="divB">
+        div B
+    </div>
+</body>
+</html>
