@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .demo1 {
+            width: 200px;
+            height: 200px;
+            background-color: antiquewhite;
+            font-size: 2em;
+        }
+
+        .parent {
+            margin-top: 20px;
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            font-size: 30px;
+        }
+
+        .parent .child {
+            font-size: 2em;
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        đơn vị em 
+        Relative to the font-size of the element (2em means 2 times the size of the current font)
+        tương đối so với font size của thẻ 
+
+        - TH1 mặc định 1em = 16px
+        - TH2 em phụ thuộc vào font-size của thẻ cha cấp trên 
+    </pre>
+
+    <div class="demo1">
+        test em
+    </div>
+
+    <div class="parent">
+        <div class="child">
+            thẻ con 
+        </div>
+    </div>
+</body>
+</html>
