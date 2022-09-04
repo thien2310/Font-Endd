@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // biến toàn cục
+        var f = 1;
+        // f2 là toàn cục
+        let f2 = 2;
+        // f3 toàn cục
+        const f3 = 3;
+
+        {
+            // biến g phạm vi trong {}
+            let g = 9;
+        }
+
+        {
+            // biến t có pham vị trong {}
+            const t = 5;
+        }
+
+        // a và b là 2 tham số đầu vào
+        function tinhTong(a, b) {
+            // biến a và b có phạm vi cục bộ
+            // biến c được khai báo trong function có phạm vi cục bộ
+            var c = a + b;
+            return c;
+        } // end function 
+
+        // khi gọi hàm 1 và 2 là đối số 
+        tinhTong(1,2);
+
+        var c = 3;
+        var d = 4;
+        // c và d là 2 đối số 
+        tinhTong(c,d);
+
+
+    </script>
+</body>
+</html>

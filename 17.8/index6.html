@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        do {
+            code của vòng lặp
+        }
+        while (điều kiện);
+    </pre>
+
+    <select name="nam" id="nam">
+        <option value="1922">năm 1922</option>
+        <option value="1923">năm 1923</option>
+        <option value="2022">năm 2022</option>
+    </select>
+
+    <script>
+        var i = 1;
+        do {
+            document.write('<p>' + i + '</p>');
+            i++;
+        } while(i<=10);
+
+        // dùng vòng lăp do ... while 
+        // 1922 - 2022
+
+        var html_option_nam = '';
+        var nam = 1998;
+        do {
+            html_option_nam += '<option value = "'+ nam +'" >' + 'năm  ' + nam + '</option>';
+            nam++;
+        }while(nam<=2022);
+
+        document.getElementById('nam').innerHTML = html_option_nam;
+    </script>
+</body>
+</html>

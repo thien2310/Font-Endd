@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset = "utf-8">
+        <title> HW3 </title>
+        <script type="text/javascript" src="abc.js"></script>
+        <style type = "text/css">
+        table
+        {
+            width: 300px;           
+            border:1px solid black;
+            border-collapse : collapse;        
+        }
+        tr td
+        {
+            border:1px solid black;
+        }
+
+        table
+                  {
+                      width: 300px;           
+                      border:1px solid black;
+                      border-collapse : collapse;        
+                  }
+                  tr td, tr th
+                  {
+                      border:1px solid black;
+                  }
+        </style>
+    </head>
+    <body>  
+        <form name = "form" enctype="multipart/form-data" id="form" method="post" onsubmit="return false;">
+            <label><textarea name="txt" rows="20" cols = "40"></textarea></label>
+            <br>
+            <button type="submit" onclick = "javascript:progress()">Submit</button>
+        </form>
+        <p id= "out"></p>
+        <script>
+             function progress(){
+            var txt = document.form.txt.value;
+            var line = txt.split("\n"); // every line of context
+            var line_num = line.length; // total line
+            var uniqueValue = [];
+            var values = [];
+            for (var i = 0; i<line_num; i++)
+            {
+              var seq = line[i].split(" "); //seq[0]: name of label, seq[1] : context
+              if (uniqueValue.indexOf(seq[0]) == -1)
+                {
+                  uniqueValue.push(seq[0]);
+                  values[uniqueValue.indexOf(seq[0])] = new Array();
+                }
+               values[uniqueValue.indexOf(seq[0])].push(seq[1]);
+              }
+              var maxLength = 0;
+              var length = values.length;
+              for (i = 0; i < length; i++)
+              {
+                if(values[i].length > maxLength)
+                  maxLength = values[i].length
+              }
+              if (length > 0)
+              {
+                var out = "<table>"; // if the value exist, using table to display
+                for (var i = 0; i <= maxLength; i++)
+                {
+                  out = out + "<tr>"
+                  for (var j = 0; j < length; j++)
+                  {
+                    if(i==0)
+                    {
+                      out = out+ "<th>"+ uniqueValue[j] +"</th>";
+                    }
+                    else
+                    {
+                      if (values[j][i - 1])
+                        out = out + "<td>" + values[j][i - 1] + "</td>";
+                      else
+                        out = out + "<td></td>";
+                    }
+                }
+                out = out + "</tr>"
+              }
+              out = out + "</table>"
+             }
+            document.getElementById('out').innerHTML=out; // display the result
+          }
+
+        </script>
+       
+         
+          <form name = "form" enctype="multipart/form-data" id="form" method="post" onsubmit="return false;">
+            <label><textarea name="txt" rows="20" cols = "40"></textarea></label>
+            <br>
+            <button type="submit" onclick = "javascript:progress()">Submit</button>
+          </form>
+          <p id= "out"></p>
+    </body>
+</html>

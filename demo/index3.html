@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+
+            display: flex;
+            justify-content: flex-start;
+            width: 1200px;
+            flex-direction: row;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            background-color: blue;
+           
+        }
+        .col {
+            background-color: aqua;
+            width: 30%;
+            padding: 10px;
+            margin: 10px 1%;
+        }
+        @media screen and (min-width:330px) and (max-width:770px) {
+            * mobile
+            .container {
+                flex-direction: column;
+                width: 100%;
+            }
+            .container .col {
+                width: 98%;
+                margin: 10px 1%;
+            }
+            
+        }
+        @media screen and (min-width:768px) and (max-width: 1024px) {
+            .container {
+                flex-direction: row;
+                width: 100%;
+                justify-content: flex-start;
+            }
+            .container .col {
+                width: 48%;
+                margin: 10px 1%;
+            }
+
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="col">
+            <h1>Cột 1</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fugit accusantium veritatis necessitatibus assumenda repellendus vitae, nihil similique ratione. Sapiente impedit odio neque reiciendis nihil quia facilis, nesciunt in beatae?
+            </p>
+        </div>
+        <div class="col">
+            <h1>Cột 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consequuntur architecto amet est perferendis alias facere eum culpa quas excepturi sed doloribus, perspiciatis quo delectus dolorem! Explicabo quibusdam dolore quis.</p>
+        </div>
+        <div class="col">
+            <h1>Cột 3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consequuntur architecto amet est perferendis alias facere eum culpa quas excepturi sed doloribus, perspiciatis quo delectus dolorem! Explicabo quibusdam dolore quis.</p>
+        </div>
+        <div class="col">
+            <h1>Cột 3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consequuntur architecto amet est perferendis alias facere eum culpa quas excepturi sed doloribus, perspiciatis quo delectus dolorem! Explicabo quibusdam dolore quis.</p>
+        </div>
+        <div class="col">
+            <h1>Cột 3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consequuntur architecto amet est perferendis alias facere eum culpa quas excepturi sed doloribus, perspiciatis quo delectus dolorem! Explicabo quibusdam dolore quis.</p>
+        </div>
+        <div class="col">
+            <h1>Cột 3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consequuntur architecto amet est perferendis alias facere eum culpa quas excepturi sed doloribus, perspiciatis quo delectus dolorem! Explicabo quibusdam dolore quis.</p>
+        </div>
+        <div class="col">
+            <h1>Cột 3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consequuntur architecto amet est perferendis alias facere eum culpa quas excepturi sed doloribus, perspiciatis quo delectus dolorem! Explicabo quibusdam dolore quis.</p>
+        </div>
+        <div class="col">
+            <h1>Cột 3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consequuntur architecto amet est perferendis alias facere eum culpa quas excepturi sed doloribus, perspiciatis quo delectus dolorem! Explicabo quibusdam dolore quis.</p>
+        </div>
+    </div>
+    
+</body>
+</html>

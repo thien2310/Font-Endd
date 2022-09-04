@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .site-wrap {
+            width: 100%;
+        }
+        .site-wrap *{
+            box-sizing: border-box;
+            
+        }
+        .site-wrap .header {
+            width: 100%;
+            height: 896px;
+            background: linear-gradient(180deg, #6F7DFB 0%, #26308C 100%);
+            border: 1px solid #000000;
+                       
+            
+        }
+        .site-wrap .header .top-header{
+            margin: 60px 32px 58px 32px;
+            height: 42px ;
+            display: flex;
+            justify-content: space-between;
+                  
+
+        }
+        .site-wrap .header .top-header .logo {
+            font-size: 36px;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 36px;
+            line-height: 42px;
+            color: #fff;
+          
+        }
+        
+        .site-wrap .header .top-header .menu-icon {
+            align-self: center;
+            
+        }
+
+        .intro {
+            height:330px ;
+            margin: 0 32px 0px 32px;
+
+
+    
+            
+        }
+        
+        .site-wrap .intro .intro-title{
+            height: 90px;
+            padding-right: 30px;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 36px;
+            line-height: 125%;
+            
+
+
+
+            color: #FFFFFF;
+            
+        }
+
+        .site-wrap .intro .intro-desc {
+            height: 128px;
+            margin-top:16px ;           
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 200%;
+            /* or 32px */
+
+
+            color: #FFFFFF;
+        }
+
+        .site-wrap .intro .errol-btn{
+            margin-top: 34px;
+            width: 171px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 12px 32px;
+            gap: 10px;
+            background: #DA722C;
+            border-radius: 24px;
+        }
+
+        .site-wrap .intro .errol-btn a {
+            
+            text-decoration: none;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            color: #fff;
+
+        }
+        .bottom-header {
+            height: 399px;
+            background: url(assets/img/bottom-img.png) no-repeat bottom right;
+            position: relative;
+            
+
+            
+
+        }
+
+        .site-wrap .bottom-header .site-achievements {
+
+            background: linear-gradient(180deg, #6F7DFB 0%, #3B448F 100%);
+border-radius: 24px;
+            width: 192px;
+            height: 84px;
+            position: absolute;
+            left: 32px;
+            top: 146px
+            
+
+        }
+
+        .site-wrap .bottom-header .achievements {
+            background: #FFFFFF;
+            border-radius: 24px;
+            width: 182px;
+            height: 75px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+       
+        }
+
+        .site-wrap .bottom-header .achievements .view-number {
+            align-self: center;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 125%;
+            /* identical to box height, or 38px */
+
+
+            color: #023047;
+
+
+         
+        }
+
+        .site-wrap .bottom-header .achievements .info {
+            align-self: center;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 125%;
+            /* identical to box height, or 18px */
+
+
+            color: #023047;
+
+        
+        }
+
+        .site-wrap .bottom-header .site-achievements-2 {
+            width: 172px;
+            height: 80px;
+            
+            background: linear-gradient(180deg, #6F7DFB 0%, #3B448F 100%);
+            border-radius: 24px;
+            position: absolute;
+            top: 278px;
+            left: 32px;
+            
+      
+
+       }
+       .site-wrap .bottom-header .site-achievements-2 .achievements-2 {
+        background: #FFFFFF;
+        border-radius: 24px;
+        width: 160px;
+        height: 75px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+
+       }
+
+       .site-wrap .bottom-header .achievements-2 .view-number {
+        align-self: center;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 125%;
+        /* identical to box height, or 38px */
+
+
+        color: #023047;
+       
+            
+        }
+
+        .site-wrap .bottom-header .achievements-2 .info {
+            align-self: center;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 125%;
+            /* identical to box height, or 18px */
+
+
+            color: #023047;
+           
+            
+        }
+
+        
+       
+    </style>
+</head>
+<body>
+    <div class="site-wrap">
+
+        <!-- header  -->
+        <div class="header">
+            <div class="top-header">
+                <div class="logo">
+                    GD.
+                </div>
+                <div class="menu-icon">
+                    <img src="assets/img/menu-icon.png" alt="">
+                </div>
+            </div>
+
+            <div class="intro">
+                <div class="intro-title">
+                    Learn the art of Game Dev
+                </div>
+                <div class="intro-desc">
+                    This is a comprehensive course on Game Development. You will learn everything from generating an idea to publishing your games to different platforms.
+                </div>
+                <div class="errol-btn">
+                    <div class="errol-btn-icon">
+                        <img src="assets/img/icon-pen.png" alt="">
+                    </div>
+                    <a href="">Enrol Now</a>
+                </div>
+            </div>
+
+            <div class="bottom-header">
+                <div class="site-achievements">
+                    <div class="achievements">
+
+                        <div class="view-number">
+                            32K
+                        </div>
+                        <div class="info">
+                            Students Enrolled
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="site-achievements-2">
+                    <div class="achievements-2">
+                        <div class="view-number">
+                            4.7
+                            <img src="assets/img/view-icon.png" alt="" width="35px" height="35px">
+                        </div>
+                        <div class="info">
+                            Overall Rating
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+            </div>
+
+           
+        </div>
+
+
+        <!-- main-content -->
+        <div class="main-content">
+            <div class="content">
+                <div class="title-content">
+                    What our students say
+                </div>
+                <div class="info-content">
+                    All students get access to all the videos and also the source code of the projects. You will also have access to a private Discord channel where you can discuss your doubts.
+                </div>
+            </div>
+
+            <div class="intro-content">
+                <!-- box-info 1 -->
+                <div class="box-info">
+                    <div class="info">
+                        This is a great course. It helped me a lot. Thank you :)
+                    </div>
+                    <div class="name-info">
+                        <!-- user 1 -->
+                        <div class="user-info">
+                            <div class="name">
+                                Jane Cooper
+                            </div>
+                            <div class="word">
+                                Developer, Sony
+                            </div>
+                        </div>
+
+                        <div class="img-user">
+                            <img src="assets/img/user1.png" alt="">
+                        </div>                        
+                    </div>
+                </div>
+
+                <!-- box-info 2 -->
+                <div class="box-info">
+                    <div class="info">
+                        Amazing Work! Well done!
+                    </div>
+                    <div class="name-info">
+                        <!-- user 1 -->
+                        <div class="user-info">
+                            <div class="name">
+                                Jacob Jones
+                            </div>
+                            <div class="word">
+                                Designer, Facebook
+                            </div>
+                        </div>
+
+                        <div class="img-user">
+                            <img src="assets/img/user2.png" alt="">
+                        </div>                        
+                    </div>
+                </div>
+
+                <div class="ruller"> thanh ruler</div>
+
+               
+            </div>
+
+            <div class="btn-learn_more">
+                <a href="">Learn More</a>
+            </div>
+        </div>
+
+        <!-- main content 2 -->
+        <div class="main-content-2">
+            <div class="title-content">
+                Our Courses
+            </div>
+
+            <div class="box-gameinfo">
+                <div class="img-game">
+                    <img src="assets/img/game1.png" alt="">
+                </div>
+
+                <div class="info-game">
+                    <div class="name-game">
+                        Game Design Essentials
+                    </div>
+
+                    <div class="time-game">
+                        <div class="icon">
+                            <img src="assets/img/icon-time.png" alt="">
+                        </div>
+                        8 HRS
+                    </div>
+                    <div class="bottom-ruler">
+                        <img src="assets/img/ruler.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="box-gameinfo">
+                <div class="img-game">
+                    <img src="assets/img/game2.png" alt="">
+                </div>
+
+                <div class="info-game">
+                    <div class="name-game">
+                        Unity Game Engine Fundamentals
+                    </div>
+                    
+                    <div class="time-game">
+                        <div class="icon">
+                            <img src="assets/img/icon-time.png" alt="">
+                        </div>
+                        8 HRS
+                    </div>
+                    <div class="bottom-ruler">
+                        <img src="assets/img/ruler.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="btn-option">
+                All Courses
+            </div>
+        </div>
+
+        <!-- main content 3 -->
+
+        <div class="main-content-3">
+            <h2>Get our App</h2>
+            <div class="info-app"> 
+                You can use our App for better experience on smartphones
+            </div>
+            <div class="box-app">
+                <div class="icon-app">
+                    <img src="assets/img/icon-app.png" alt="">
+                </div>
+                <div class="name-app">
+                    App Store
+                </div>
+            </div>
+
+            <div class="box-app">
+                <div class="icon-app">
+                    <img src="assets/img/icon-app2.png" alt="">
+                </div>
+                <div class="name-app">
+                    Google Play
+                </div>
+            </div>
+
+        </div>
+
+        <!-- footer -->
+
+        <div class="footer">
+
+
+        </div>
+
+
+
+    </div>
+    
+</body>
+</html>

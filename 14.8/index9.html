@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <pre>
+            lấy điểm 3 môn + lại >= 20 thông báo thi đỗ
+            còn lại thông báo thi trượt 
+            đồng thời các môn <= 1 điểm thì coi là điểm liệt và auto trượt 
+        </pre>
+    <div>
+        <p>
+            Điểm Toán:
+            <input type="text" id="diemToan">    
+        </p>
+      
+        <p>
+            Điểm Lý:
+            <input type="text" id="diemLy">
+        </p>
+       
+        <p>
+            Điểm Hóa:
+            <input type="text" id="diemHoa">
+        </p>
+
+        <button id="tinh">Xét điểm tốt nghiệp</button>
+       
+
+    </div>
+
+    <script>
+        document.getElementById("tinh").onclick = function(){
+            var a = document.getElementById('diemToan').value;
+            var b = document.getElementById('diemLy').value;
+            var c = document.getElementById('diemHoa').value;
+            
+            
+
+            if((parseFloat(a) + parseFloat(b) + parseFloat(c)) >= 20) {
+                if(parseFloat(a) <= 1.25){
+                    alert("bạn không đủ điều kiện đậu tốt nghiệp do điểm Toán = " + parseFloat(a) + "< 1,25");
+                }else if(parseFloat(b) <= 1.25){
+                    alert("bạn không đủ điều kiện đậu tốt nghiệp do điểm Lý = " + parseFloat(b) + "< 1,25");
+                }else if(parseFloat(c) <= 1.25){
+                    alert("bạn không đủ điều kiện đậu tốt nghiệp do điểm Hóa = " + parseFloat(c) + "< 1,25");
+                } else {
+                    alert ("Bạn đủ điều kiện đậu tốt nghiệp");
+                }
+
+            }else {
+                alert("trượt tốt nghiệp");
+            }
+
+        }
+    </script>
+
+    
+    
+</body>
+</html>

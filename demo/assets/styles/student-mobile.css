@@ -1,0 +1,66 @@
+.main-content{
+    height: 980px;
+    width: 414px;
+}
+    
+
+.main-content .student-say-box {
+    margin: 100px 32px 40px 32px;
+
+}
+
+.main-content .student-say-box .student-say-title {
+    width: 350px;
+height: 36px;
+color: #023047;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 900;
+font-size: 30px;
+line-height: 120%;
+/* identical to box height, or 36px */
+
+
+color: #023047;
+margin-bottom: 12px;
+}
+.main-content .student-say-box .student-say-intro {
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 200%;
+/* or 32px */
+
+
+color: #023047;
+    width: 350px;
+    height: 160px;
+
+}
+
+.main-content .student-say-content {
+    margin: 0 32px 0 32px;
+
+
+}
+.main-content .student-say-content .student-item {
+    margin-top: 31px;
+    width: 350px;
+    height: 199px;
+    background: #FFFFFF;
+    box-shadow: 0px 9px 36px rgba(0, 0, 0, 0.2);
+    border-radius: 24px;
+}
+
+.main-content .student-say-content .student-item .student-item-title {
+    width: 350px;
+height: 102px;
+
+background: #6F7DFB;
+border-radius: 24px;
+
+}
+
+

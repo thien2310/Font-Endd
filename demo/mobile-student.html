@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Raleway:wght@300&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .site-wrap {
+            width: 100%;
+        }
+
+        .site-wrap * {
+            box-sizing: border-box;
+        }
+
+        .site-wrap .header {
+            width: 100%;
+            height: 896px;
+            background: linear-gradient(180deg, #6F7DFB 0%, #26308C 100%);
+            border: 1px solid #000000;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        .top-header {
+            margin: 60px 32px 58px 32px;
+            height: 42px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .top-header .logo {
+            font-family: 'Raleway', sans-serif;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 36px;
+            line-height: 125%;
+            /* or 45px */
+            color: #FFFFFF;
+        }
+
+        .intro {
+            margin-left: 32px;
+            margin-right: 32px;
+        }
+
+        .intro .intro-title {
+            font-family: 'Raleway', sans-serif;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 36px;
+            line-height: 125%;
+            /* or 45px */
+            color: #FFFFFF;
+        }
+
+        .intro .intro-desc {
+            margin-top: 16px;
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 200%;
+            /* or 32px */
+            color: #FFFFFF;
+        }
+
+        .enroll-btn {
+            margin-top: 34px;
+            width: 171px;
+            height: 48px;
+            background: #DA722C;
+            border-radius: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            /* identical to box height */
+            color: #FFFFFF;
+            text-decoration: none;
+
+        }
+
+        .bottom-header {
+            margin-top: 21px;
+            height: 399px;
+            background: url("assets/images/bottom-img.png") no-repeat bottom right;
+            position: relative;
+        }
+
+        .count-enroll {
+            width: 192px;
+            height: 84px;
+            background: linear-gradient(180deg, #6F7DFB 0%, #3B448F 100%);
+            border-radius: 24px;
+            position: absolute;
+            top: 125px;
+            left: 29px;
+        }
+
+        .count-enroll-inner {
+            width: 182px;
+            height: 75px;
+            background: #FFFFFF;
+            border-radius: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .count-enroll-inner .total {
+            width: 56px;
+            height: 38px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 125%;
+            /* identical to box height, or 38px */
+            color: #023047;
+        }
+
+        .count-enroll-inner .suf-info {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 125%;
+            /* identical to box height, or 18px */
+            color: #023047;
+        }
+
+        .overall-rating {
+            width: 192px;
+            height: 84px;
+            background: linear-gradient(180deg, #6F7DFB 0%, #3B448F 100%);
+            border-radius: 24px;
+            position: absolute;
+            top: 257px;
+            left: 29px;
+        }
+
+        .overall-rating-inner {
+            width: 182px;
+            height: 75px;
+            background: #FFFFFF;
+            border-radius: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .overall-rating-inner .total {
+            width: 56px;
+            height: 38px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 125%;
+            /* identical to box height, or 38px */
+            color: #023047;
+        }
+
+        .overall-rating-inner .suf-info {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 125%;
+            /* identical to box height, or 18px */
+            color: #023047;
+        }
+
+        
+
+    </style>
+
+    <link rel="stylesheet" href="assets/styles/student-mobile.css">
+</head>
+
+<body>
+
+    <div class="site-wrap">
+
+        <div class="header">
+            <div class="top-header">
+                <div class="logo">GD.</div>
+                <div class="mobile-menu">
+                    <a href=""><img src="assets/images/menu-icon.png" alt=""></a>
+                </div>
+            </div>
+
+            <div class="intro">
+                <div class="intro-title">Learn the art of
+                    Game Dev</div>
+                <div class="intro-desc">This is a comprehensive course on Game Development. You will learn everything
+                    from generating an idea to publishing your games to different platforms.</div>
+                <a href="#" class="enroll-btn">Enroll Now</a>
+            </div>
+
+            <div class="bottom-header">
+                <div class="count-enroll">
+                    <div class="count-enroll-inner">
+                        <div class="total">32K</div>
+                        <div class="suf-info">Students Enrolled</div>
+                    </div>
+                </div>
+
+                <div class="overall-rating">
+                    <div class="overall-rating-inner">
+                        <div class="total">4.7</div>
+                        <div class="suf-info">Overall Rating</div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+
+
+        <div class="main-content">
+
+                <div class="student-say-box">
+                    <div class="student-say-title">What our students say
+                    </div>
+                    <div class="student-say-intro">All students get access to all the videos and also the source code of the projects. You will also have access to a private Discord channel where you can discuss your doubts.
+                    </div>   
+                </div>
+            
+                <div class="student-say-content">
+
+                    <div class="student-item">
+                        <div class="student-item-title">This is a great course. It helped me a lot. Thank you :)</div>
+                        
+                        <div class="student-name">Jane Cooper</div>
+                        <div class="student-job">Developer, Sony</div>
+                        <div class="student-avatar">
+                            <img src="assets/images/user1.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="student-item">
+                        <div class="student-item-title">Amazing Work! Well done!</div>
+                        <div class="student-name">Jacob Jones</div>
+                        <div class="student-job">Designer, Facebook</div>
+                        <div class="student-avatar">
+                            <img src="assets/images/user2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <a href="" class="learn-more-btn">Learn More</a>
+            </div>
+
+            <div class="our-courses">
+                <h3 class="our-courses-title">Our Courses</h3>
+
+                <div class="our-course-item">
+                    <img src="assets/images/our-course1.png" alt="">
+                    <div class="course-title">
+                        <a href="">Game Design Essentials</a>
+                    </div>
+                    <div class="course-time">
+                        8 HRS
+                    </div>
+                </div>
+
+                <div class="our-course-item">
+                    <img src="assets/images/our-course2.png" alt="">
+                    <div class="course-title">
+                        <a href="">Unity Game Engine Fundamentals</a>
+                    </div>
+                    <div class="course-time">
+                        8 HRS
+                    </div>
+                </div>
+
+                <a href="" class="btn-all-courses">All Courses</a>
+            </div>
+
+            <div class="get-our-app">
+                <h3 class="get-our-app-title">Get our App</h3>
+                <div class="get-our-app-info">You can use our App for better experience on smartphones</div>
+
+                <a href="">
+                    <img src="assets/images/app-store.png" alt="">
+                    App Store
+                </a>
+
+                <a href="">
+                    <img src="assets/images/androind2.png" alt="">
+                    Google Play
+                </a>
+            </div>
+        </div>
+
+
+        <div class="footer">
+
+            <div class="footer-menu quick-links-box">
+                <h4 class="footer-menu-title">Quick Links</h4>
+                <nav class="quick-links">
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footer-menu course-box">
+                <h4 class="footer-menu-title">Course</h4>
+                <nav class="course">
+                    <ul>
+                        <li><a href="#">Log In</a></li>
+                        <li><a href="#">Download</a></li>
+                        <li><a href="#">All Courses</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footer-menu contact-us-box">
+                <h4 class="footer-menu-title">Contact Us</h4>
+                <p style="color: #FFFFFF;">contact@email.com</p>
+            </div>
+
+            <div class="social-footer">
+                <a href="" class="fa-brands fa-facebook"></a>
+                <a href="" class="fa-brands fa-instagram"></a>
+            </div>
+
+            <div class="subscribe">
+                <form action="" name="" method="post">
+                    <input type="text" name="email" id="email" placeholder="Email Address">
+                    <button class="subscribe-btn">Subscribe</button>
+                </form>
+            </div>
+
+            <div class="copyright">
+                This website is developed by GTCoding © 2021
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

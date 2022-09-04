@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+        <form action="">
+            <p>
+                Số ngày : 
+                <input name="day" id="day" type="text" value="" />
+            </p>
+            <p>
+                Loại phòng :
+                <select name="room_type" id="room_type">
+                    <option value="1">Phòng đơn</option>
+                    <option value="2">Phòng đôi</option>
+                    <option value="3">Phòng vip</option>
+                    <option value="4">Phòng đặc biệt</option>
+                </select>
+            </p>
+
+            <p id="tinhTien" onclick="tinhTien()" style="width: 100px; background: gray;color: white">Tính giá thuê phòng</p>
+
+        </form>
+    </div>
+
+    <script>
+        function tinhTien() {
+            var room_type = document.getElementById('room_type').value;
+            room_type = parseFloat(room_type);
+            //alert(room_type);
+            var day = document.getElementById('day').value;
+            day = parseFloat(day);
+            switch (room_type){
+                case 1:
+                   alert('Số tiền thuê phòng là: ' + Math.ceil(day)*100 ) ;
+                   break;
+                case 2:
+                   alert('Số tiền thuê phòng là: ' + Math.ceil(day)*200 ) ;
+                   break;   
+                case 3:
+                   alert('Số tiền thuê phòng là: ' + Math.ceil(day)*500 ) ;
+                   break;
+                case 4:
+                   alert('Số tiền thuê phòng là: ' + Math.ceil(day)*1000 ) ;
+                   break;
+                default:
+            }
+
+            // tính tiền thuê phòng 
+            // biết giá thuê phòng đơn là 100 nghìn
+            // biết giá thuê phòng đôi là 200 nghìn
+            // biết giá thuê phòng vip là 500 nghìn
+            // biết giá thuê phòng đặc biệt là 1 triệu
+
+            // nếu lẻ ngày ví dụ 3.1 thì tính là 4 ngày 
+
+            // hãy alert() ra giá thuê phòng cuối cùng
+            // chú ý không được dùng if else phải dùng switch case 
+
+            // làm tròn thì đọc thêm bài này 
+            // https://www.w3schools.com/js/js_math.asp
+            // 3.1 tính tiền là 4 ngày 
+
+        }
+    </script>
+    
+</body>
+</html>

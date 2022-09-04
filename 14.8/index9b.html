@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        hàm trong js có tên
+        function TenHam() {
+            // nội dung của hàm
+        }
+
+        hàm vô danh 
+        function() {
+
+        }
+
+        // hàm với tham số đầu vào và output đầu ra 
+        // hàm có input và ouput 
+        // nồi cơm điện thì input là điện, nước , gạo 
+        // output của nồi cơm điện là cơm 
+
+        // soA và soB là 2 param tham số đầu vào 
+        // return cuối hàm là lệnh kết thúc hàm và trả về kết quả output
+        function tinhTong(soA,soB){
+            var c = soA + soB;
+            // output 
+            return c;
+        }
+
+        // hàm có param mặc định
+        function tinhTong(soA = 1,soB = 1){
+            var c = soA + soB;
+            // output 
+            return c;
+        } 
+
+    </pre>
+
+    <div>
+        
+        <p>
+            Điểm toán:
+            <input type="text" id="diemToan" name="a">
+        </p>
+
+        <p>
+            Điểm Lý:
+            <input type="text" id="diemLy" name="b">
+        </p>
+
+        <p>
+            Điểm Hóa:
+            <input type="text" id="diemHoa" name="c">
+        </p>
+
+        <p>
+            <Button id="tinh">Điều kiện xét</Button>
+        </p>
+
+    </div>
+
+    <script>
+        function count(a = 0, b = 0, c = 0, total = 20 , condition = 1.25 ){
+            var t = parseFloat(a) + parseFloat(b) + parseFloat(c) ;
+            condition = parseFloat(condition);
+            total = parseFloat(total);
+            var respone = '';
+            if(a <= condition || b <= condition || c <= condition || t < total) {
+                alert("thi trượt");
+            }else {
+                alert("thi đỗ");
+            }
+
+            return respone;
+
+
+
+
+        }
+
+       //goi sự kiện
+
+       document.getElementById("tinh").onclick = function(){
+        var a = document.getElementById("diemToan").value;
+        var b = document.getElementById("diemLy").value;
+        var c = document.getElementById("diemHoa").value;
+
+        var d = count(a,b,c);
+        alert(d);
+
+       }
+    </script>
+
+
+</body>
+</html>
